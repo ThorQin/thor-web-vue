@@ -1,19 +1,43 @@
-## Web project powered by thor-web framework
+## Install
 
-```npm run build``` to build whole project
+Use degit to create the project:
 
-```npm start``` to start the web server
+```bash
+npx degit ThorQin/thor-web-vue my-project
+```
 
-```npm run debug``` to debug the web server (recommend use vscode javascript debug terminal to debug directly)
+## Build
 
-```npm run genkey``` to generate a new server key
+```
+npm run build
+```
 
-## api doc
+## Start a production web server
+```
+npm start
+```
 
-access http://localhost:8080/api-doc to see the server api manual.
+## Start a development web server with auto reload enable
+```
+npm run debug
+```
 
-## upgrade all modules
+- recommend use vscode javascript debug terminal to debug directly
+
+## Generate a new server key
+```
+npm run genkey
+```
+
+## See api doc
+
+- Start the server 
+- Then access http://localhost:8080/api-doc to see the server api manual.
+
+## Upgrade all modules
 
 ```bash
 npm list --json | jq -r '.dependencies|keys|.[]' | awk '{system("npm i " $0)}' 
 ```
+
+- Should be executed under linux or macos and require install `jq` first.
