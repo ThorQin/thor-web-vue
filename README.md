@@ -8,6 +8,10 @@
 
 ```npm run genkey``` to generate a new server key
 
+## api doc
+
+access http://localhost:8080/api-doc to see the server api manual.
+
 ## upgrade all modules
 
 ```bash
