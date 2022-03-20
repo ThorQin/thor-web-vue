@@ -1,0 +1,17 @@
+{
+	"Generate post handler": {
+		"scope": "typescript",
+		"prefix": "apipost",
+		"body": [
+			"import { DefaultContext } from 'thor-web/dist/types';\n\nexport async function post(ctx: DefaultContext): Promise<void> {\n\t// let query = await ctx.body.json();\n\n\tawait ctx.sendJson({});\n}\n"
+		]
+	},
+	"Generate get handler": {
+		"scope": "typescript",
+		"prefix": "apiget",
+		"body": [
+			"import { DefaultContext } from 'thor-web/dist/types';\n\nexport async function get(ctx: DefaultContext): Promise<void> {\n\tawait ctx.render('page.html', {});\n}\n"
+		]
+	}
+}
+
