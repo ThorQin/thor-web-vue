@@ -23,7 +23,7 @@
 		"mdue": "^0.1.4",
 		"thor-tpl": "^1.1.8",
 		"thor-validation": "^1.1.10",
-		"thor-web": "^1.4.25",
+		"thor-web": "^1.4.26",
 		"vue": "^3.2.31"
 	},
 	"devDependencies": {
