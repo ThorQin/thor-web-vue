@@ -8,7 +8,7 @@ export default defineConfig({
 	publicDir: resolve(__dirname, 'public'),
 	root: 'vue',
 	build: {
-		outDir: '../www',
+		outDir: '../dist/www',
 		emptyOutDir: true,
 		rollupOptions: {
 			input: {

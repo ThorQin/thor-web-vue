@@ -3,19 +3,13 @@ import { AccessHandlerParam } from 'thor-web/dist/types';
 
 // public access dirs
 const publicPath = new RegExp(
-	[
-		'^/api/auth/login$',
-		'^/login/',
-		'^/assets/(login\\.|modulepreload-polyfill\\.|vendor\\.|axios\\.)',
-		'^/api-doc(/.+)?',
-	]
-		.map((r) => `(${r})`)
-		.join('|')
+	['^/api/auth/login$', '^/login/', '^/assets/', '^/api-doc(/.+)?', '^/favicon.ico$'].map((r) => `(${r})`).join('|')
 );
 
 App.start({
-	controllerDir: './dist/controllers',
+	controllerDir: './dist/server/controllers',
 	controllerPath: '/api',
+	staticDir: './dist/www',
 	apiDocPath: '/api-doc',
 	serverKey: 'pR6psKhGEeyC4gV06fbEDA==', // May use 'npm run genkey' to obtain a new server key
 	accessHandler: async (param: AccessHandlerParam) => {
@@ -33,4 +27,5 @@ App.start({
 			return false;
 		}
 	},
+	suffix: ['ico'],
 });

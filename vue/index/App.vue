@@ -2,7 +2,7 @@
 	import { Home } from 'mdue';
 	import axios from 'axios';
 	import { onMounted, ref } from 'vue';
-	import { getErrMsg } from './utils/axios';
+	import { getErrMsg } from '../utils/axios';
 
 	const errMsg = ref('');
 	const detail = ref(null);
@@ -47,7 +47,7 @@
 					<th>Key</th>
 					<th>Value</th>
 				</tr>
-				<tr v-for="key in Object.keys(detail)">
+				<tr v-for="(key, _i) in Object.keys(detail)" :key="_i">
 					<td>{{key}}</td>
 					<td>{{detail[key]}}</td>
 				</tr>
