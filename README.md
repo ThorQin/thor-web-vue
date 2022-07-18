@@ -34,10 +34,5 @@ npm run genkey
 - Start the server 
 - Then access http://localhost:8080/api-doc to see the server api manual.
 
-## Upgrade all modules
-
-```bash
-npm list --json | jq -r '.dependencies|keys|.[]' | awk '{system("npm i " $0)}' 
-```
 
 - Should be executed under linux or macos and require install `jq` first.

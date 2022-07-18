@@ -18,29 +18,29 @@
 	},
 	"name": "thor-web-vue",
 	"dependencies": {
-		"@types/node": "^14.18.12",
+		"@types/node": "^14.18.22",
 		"axios": "^0.26.1",
 		"mdue": "^0.1.4",
 		"thor-tpl": "^1.1.8",
-		"thor-validation": "^1.1.10",
-		"thor-web": "^1.4.26",
+		"thor-validation": "^1.1.11",
+		"thor-web": "^1.4.36",
 		"utf-8-validate": "^5.0.9",
 		"vue": "^3.2.31"
 	},
 	"devDependencies": {
 		"@typescript-eslint/eslint-plugin": "^4.33.0",
 		"@typescript-eslint/parser": "^4.33.0",
-		"@vitejs/plugin-vue": "^2.2.4",
+		"@vitejs/plugin-vue": "^2.3.3",
 		"cross-env": "^7.0.3",
 		"eslint": "^7.32.0",
 		"eslint-config-prettier": "^6.15.0",
 		"eslint-plugin-prettier": "^3.4.1",
-		"nodemon": "^2.0.15",
+		"nodemon": "^2.0.19",
 		"npm-run-all": "^4.1.5",
-		"prettier": "^2.6.0",
+		"prettier": "^2.7.1",
 		"shx": "^0.3.4",
-		"typescript": "^4.6.2",
-		"vite": "^2.8.6",
+		"typescript": "^4.7.4",
+		"vite": "^2.9.14",
 		"vue-tsc": "^0.29.8"
 	}
 }
